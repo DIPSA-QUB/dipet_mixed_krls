@@ -1,12 +1,14 @@
-# dipet_mixed_krls
+# dipet_mixed_krls - mixed_krls v0.1 source codes <br>
 
-mixed_krls v0.1 source codes <br>
-
-Please go to ./blas_ver directory. Non-blas version is not available at this moment. <br>
-
+# Requirement: MKL library <br>
+1. Please install a MKL library in /opt/intel/ <br>
+2. Type: source /opt/intel/mkl/bin/mklvars.sh intel64 <br>
+3. Go to ./blas_ver directory. Non-blas version is not available at this moment. <br>
+4. Type: make <br> 
 
 learn_curve_krls.cpp file simulates the learning accuracy of three different arithmetic KRLS.<br>
-The command line is:<br>
+
+5. The execution command lines are:<br>
 ./learn_krls_curve arithmetic_type appl_type  min_#_samples max_#_samples input_length kernel_width ald_param<br>
 e.g., ./learn_krls_curve mixed mg30 1 10000 6 0.5 0.001<br>
 or <br>
